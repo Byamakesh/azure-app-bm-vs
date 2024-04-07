@@ -14,6 +14,7 @@ namespace azure_app_bm_vs.Pages
 
         public void OnGet()
         {
+            throw new Exception("Its the custom exception been thrown.");
         }
     }
 
