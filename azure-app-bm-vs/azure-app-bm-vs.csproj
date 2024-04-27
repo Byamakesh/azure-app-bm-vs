@@ -5,12 +5,29 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_app_bm_vs</RootNamespace>
+<<<<<<< staging
+    <UserSecretsId>bb83eef3-c6e7-4d58-bde6-f66fb4633668</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+=======
     <ApplicationInsightsResourceId>/subscriptions/d9e62005-d2e7-4597-903b-5778df030883/resourceGroups/az-group-rg-us/providers/microsoft.insights/components/azure-app-bm-vs</ApplicationInsightsResourceId>
     <UserSecretsId>0dac79fa-478f-46d5-8f44-e2a17583b5a3</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+>>>>>>> main
   </ItemGroup>
 
 </Project>
