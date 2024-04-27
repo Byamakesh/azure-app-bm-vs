@@ -9,6 +9,10 @@ var connectionString = builder.Configuration.GetConnectionString("AzureSqlConnec
 builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(connectionString));
 
 builder.Services.AddRazorPages();
+builder.Services.AddApplicationInsightsTelemetry(new Microsoft.ApplicationInsights.AspNetCore.Extensions.ApplicationInsightsServiceOptions
+{
+    ConnectionString = builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
+});
 
 var app = builder.Build();
 
