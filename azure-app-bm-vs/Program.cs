@@ -1,6 +1,13 @@
+using azure_app_bm_vs.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+var connectionString = builder.Configuration.GetConnectionString("AzureSqlConnection");
+builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(connectionString));
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
